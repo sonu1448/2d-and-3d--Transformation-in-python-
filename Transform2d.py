@@ -65,7 +65,7 @@ def drawPllygonImage(sx,sy,tx,ty):
 	glBegin(GL_POLYGON)
 	#glColor3f(1.0,0.0,0.0)
 	a = math.atan2(int(ty)-int(sy),int(tx)-int(sx)) 
-	a=(a*180)/3.14159265
+	#(a=(a*180)/3.14159265  is in digree) angle should be in radian
 	a=-a
 	for i in range(edges):
 		ptr[i][0]=(ptr[i][0]-sx)
