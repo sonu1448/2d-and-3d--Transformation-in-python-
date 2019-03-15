@@ -60,7 +60,7 @@ def PllygonImage(sx,sy,tx,ty):
 	tx=int(tx)
 	ty=int(ty)
 	a =float(math.atan2(float(ty)-float(sy),float(tx)-float(sx)))
-	# angle should be in radian .....
+	a= float(a)(180/3.14159265)
 	PolygonTrans(-sx,-sy)
 	PolygonRotation(-a)
 	for i in range(edges):
